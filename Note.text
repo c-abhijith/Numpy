@@ -1,9 +1,7 @@
-                          NumPy .ipynb
+                                                     NumPy .ipynb
 					------------------------------
 
-NumPy (Numerical Python) is a powerful library in Python for numerical computing. It provides a multi-dimensional 
-array object called ndarray, along with various mathematical functions to perform operations on these arrays efficiently.
- It is widely used for scientific computing, data analysis, machine learning, and deep learning.
+NumPy (Numerical Python) is a powerful library in Python for numerical computing. It provides a multi-dimensional array object called ndarray, along with various mathematical functions to perform operations on these arrays efficiently. It is widely used for scientific computing, data analysis, machine learning, and deep learning.
 
 
 where we use numpy?
@@ -13,9 +11,9 @@ where we use numpy?
 	When dealing with multi-dimensional arrays
 
  
-	1D Array [1,2,3,4]              2D Array[[1.2.3.4],                 3DArray [[1,2,3],
-			                                 [6,7,8,9]]				             [4,5,6],
-                                                                                 [7,8,9]]
+	1D Array [1,2,3,4]  2D Array[[1.2.3.4],                 3DArray [[1,2,3],
+				     [6,7,8,9]]				 [4,5,6],
+                                                                         [7,8,9]]
 
 
 
