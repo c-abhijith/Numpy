@@ -38,7 +38,19 @@ Array Manipulation
 		np.hstack((arr1, arr2))
 		np.vstack((arr1, arr2))
 
+Mathematical Operations
+------------------------
 
+	  arr = np.add([1, 2], [3, 4])          ---> output array([4, 6])
+		np.subtract([5, 6], [1, 2])
+		np.multiply([1, 2], [3, 4])
+		np.divide([6, 8], [2, 4])
+		np.dot([1, 2], [3, 4])           ---> output 11
+		np.sum([1, 2, 3])                --->        6
+		np.mean([1, 2, 3])
+		np.std([1, 2, 3])       --->  standard deviation 
+		np.min([1, 2, 3])
+		np.max([1, 2, 3])
 			
  
 	      
