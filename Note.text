@@ -1,0 +1,33 @@
+                          NumPy .ipynb
+					------------------------------
+
+NumPy (Numerical Python) is a powerful library in Python for numerical computing. It provides a multi-dimensional 
+array object called ndarray, along with various mathematical functions to perform operations on these arrays efficiently.
+ It is widely used for scientific computing, data analysis, machine learning, and deep learning.
+
+
+where we use numpy?
+	When working with large datasets
+	When performing mathematical or scientific computations
+	When efficiency and speed are required
+	When dealing with multi-dimensional arrays
+
+ 
+	1D Array [1,2,3,4]              2D Array[[1.2.3.4],                 3DArray [[1,2,3],
+			  [6,7,8,9]]				     [4,5,6],
+                                                                                 [7,8,9]]
+
+
+
+Array Creation
+-------------
+	arr = np.array([1, 2, 3])
+	      np.zeros((2,2))                 floating-point number (float64 by default).(output data show '1.' like)
+	      np.ones((2,4))
+	      np.empty((2,2)) ---> Creates an uninitialized array
+	      np.arange(0,10,1) --> 1D Array
+	      np.linespace(1,10,5) --> devide 1 to 10 , 5 pices
+	      np.eye(3)  --> it wil give 3*3 array and same I and j will compel place is 1
+              np.random.rand(2) ---> random 2*2 array will give
+ 
+	      
