@@ -26,6 +26,18 @@ Array Creation
           np.random.rand(2) ---> random 2*2 array will give
 		  np.array([[1,2],[4,5]])
 		  np.vstack((arr1, arr2))
+		
+
+		  ------- Additional----------
+
+		  np.full((2, 2), 7) 
+		  np.random.randint(0, 10, (3, 3))
+		  np.random.normal(0, 1, (2, 2))
+		  np.diag([1, 2, 3])
+		  np.full_like()
+		  np.random.random_sample()
+		  np.fromfunction()
+
 
 
 Array Manipulation
@@ -37,6 +49,14 @@ Array Manipulation
 		np.split(arr, 3)
 		np.hstack((arr1, arr2))
 		np.vstack((arr1, arr2))
+
+		  ------- Additional----------
+		  np.ravel(): Flattens an array 
+		  np.resize(): Resizes an array, repeating elements if necessary.
+		  np.tile(): Repeats an array a specified number of times.
+		  np.repeat(): Repeats elements of an array
+		  np.swapaxes(): Swaps two axes of an array.
+		  np.roll(): Rolls array elements along a specified axis.
 
 Mathematical Operations
 ------------------------
@@ -52,7 +72,15 @@ Mathematical Operations
 		np.min([1, 2, 3])
 		np.max([1, 2, 3])
 			
- 
+		------- Additional----------
+		np.power()
+		np.sqrt(): 
+		np.exp()
+		np.log()
+		np.abs()
+		np.floor() and np.ceil()
+
+
 Linear Algebra
 ------------------------
 	  arr = np.array([[1, 2], [3, 4]])
@@ -63,8 +91,44 @@ Linear Algebra
 	    x = np.linalg.solve(mat, [5, 11])             ---->  linear matrix equation.
 
 
+		------- Additional----------
+		np.linalg.norm(): 
+		np.linalg.qr()
+		np.linalg.svd()
+		np.linalg.matrix_rank()
+
+
 Statistical Functions
 ---------------------
 		 np.median([1, 2, 3, 4])
 		 np.percentile([1, 2, 3, 4], 50)          ----> Computes the nth percentile of array elements.
 		 np.corrcoef([1, 2, 3], [4, 5, 6])        ----> correlation coefficient matrix.
+
+		------- Additional----------
+		 np.cov()
+		 np.histogram()
+		 np.percentile()
+
+
+Miscellaneous
+------------------------
+	  result = np.where(arr > 2)
+		   np.unique(np.array([1,2,3,3,4,5,2]))
+		   np.sort(arr)
+
+		   np.argmax()
+		   np.clip()
+		   np.isnan()
+		   np.unique()
+		   np.where()
+		   
+
+
+Additional Array Creation Methods
+--------------------------------
+creating---->		arr = np.full((2, 2), 7)  
+	      		      np.random.randint(0, 10, (3, 3))
+	     		      np.random.normal(0, 1, (2, 2))
+	      		      np.diag([1, 2, 3]) 	
+			
+		
