@@ -53,4 +53,18 @@ Mathematical Operations
 		np.max([1, 2, 3])
 			
  
-	      
+Linear Algebra
+------------------------
+	  arr = np.array([[1, 2], [3, 4]])
+		np.linalg.inv(arr)              ------> inverse of a matrix.
+		np.linalg.det(mat)              ------> determinant of a matrix
+
+		eigenvalues, eigenvectors = np.linalg.eig(mat)
+	    x = np.linalg.solve(mat, [5, 11])             ---->  linear matrix equation.
+
+
+Statistical Functions
+---------------------
+		 np.median([1, 2, 3, 4])
+		 np.percentile([1, 2, 3, 4], 50)          ----> Computes the nth percentile of array elements.
+		 np.corrcoef([1, 2, 3], [4, 5, 6])        ----> correlation coefficient matrix.
