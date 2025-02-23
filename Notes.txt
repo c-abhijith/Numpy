@@ -1,9 +1,15 @@
-                                                     NumPy .ipynb
-					------------------------------
+							NumPy
+						  ------------------
+NumPy (Numerical Python) is a powerful library in Python for numerical computing. It provides a multi-dimensional array object 
+called ndarray, along with various mathematical functions to perform operations on these arrays efficiently. 
+It is widely used for scientific computing, data analysis, machine learning, and deep learning.
 
-NumPy (Numerical Python) is a powerful library in Python for numerical computing. It provides a multi-dimensional array object called ndarray, along with various mathematical functions to perform operations on these arrays efficiently. It is widely used for scientific computing, data analysis, machine learning, and deep learning.
+		ndarray: A fast and space-efficient multidimensional array providing vectorized arithmetic operations 
+			 and sophisticated broadcasting capabilities.
 
-
+		Mathematical Functions: A large collection of mathematical functions to perform operations on arrays, 
+					including linear algebra, statistical operations, Fourier transforms, and more.
+	
 where we use numpy?
 	When working with large datasets
 	When performing mathematical or scientific computations
@@ -13,6 +19,74 @@ where we use numpy?
 	1D Array [1,2,3,4]                2D Array[[1.2.3.4],                  3DArray [[1,2,3],
 				                   [6,7,8,9]]				[4,5,6],
                                                                                         [7,8,9]]
+
+NumPy Array
+----------
+	=> NumPy arrays are highly optimized for numerical computations,Operations on NumPy arrays are implemented in C,
+	   making them much faster than Python lists for large datasets.
+	=> NumPy arrays are more memory-efficient because they store data in a contiguous block of memory.
+	=> NumPy provides a wide range of built-in functions for mathematical operations, linear algebra, statistics, and more.
+	=> Ideal for numerical computations, scientific computing, and data analysis,Used in machine learning, image processing, 
+	   and simulations.
+
+Python List
+------------
+	=> Python lists are more flexible but slower for numerical computations.
+	=> Python lists are heterogeneous (can store elements of different data types), 
+	   which makes them more flexible but less memory-efficient
+	=> Python lists are more general-purpose and lack built-in mathematical functions.
+	=> Ideal for general-purpose programming, storing heterogeneous data, or when flexibility is required.
+
+
+
+	Feature         		NumPy Arrays					Python Lists
+	Performance	        	Faster for numerical computations		Slower for numerical operations
+	Memory Efficiency		More memory-efficient				Less memory-efficient
+	Functionality	        	Built-in mathematical functions			Limited functionality
+	Flexibility	        	Homogeneous (fixed data type)			Heterogeneous (mixed data types)
+	Use Cases	        	Scientific computing, data analysis		General-purpose programming
+
+
+
+NumPy Data Types
+---------------
+	Integer Types
+			Signed integers(int8,16,32,64)   : Can store both positive and negative integers.
+			Unsigned integers(unint8,,,)	 : Can store only non-negative integers.
+
+	Floating-Point Types
+			Single-precision (float32): 32-bit floating-point numbers.
+			Double-precision (float64): 64-bit floating-point numbers (default for most operations).
+	Complex Numbers
+			complex64: 64-bit complex number (32-bit real + 32-bit imaginary).
+			complex128: 128-bit complex number (64-bit real + 64-bit imaginary).
+	Boolean Type:
+			bool: Stores True or False values.
+	String Types:
+			Fixed-length strings (<U10): Stores strings of fixed length (e.g., 10 characters).
+	Object Type:
+		        object: Stores Python objects (e.g., lists, dictionaries, or mixed types).
+	DateTime and Timedelta:
+			datetime64: Represents dates and times.
+			timedelta64: Represents differences in times.
+			Y: Year				M: Month
+			D: Day				h: Hour
+			m: Minute			s: Second
+			ms: Millisecond			us: Microsecond
+			ns: Nanosecond			ps: Picosecond
+			fs: Femtosecond			as: Attosecond
+
+dtype : data type
+astype :  method used to change the data type 
+
+
+
+
+
+
+
+
+
 
 Array Creation
 -------------
@@ -131,4 +205,3 @@ creating---->		arr = np.full((2, 2), 7)
 	     		      np.random.normal(0, 1, (2, 2))
 	      		      np.diag([1, 2, 3]) 	
 			
-		
