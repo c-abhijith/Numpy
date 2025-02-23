@@ -91,15 +91,23 @@ astype :  method used to change the data type
 Array Creation
 -------------
 	arr = np.array([1, 2, 3])
-	      np.zeros((2,2))                 floating-point number (float64 by default).(output data show '1.' like)
-	      np.ones((2,4))
-	      np.empty((2,2)) ---> Creates an uninitialized array
+	      np.zeros((2,2))          --->2*2
+	      np.ones((2,4))			---->2*4
+	      np.empty((2,2))            ---> Creates an uninitialized array(Given random values)
 	      np.arange(0,10,1) --> 1D Array
 	      np.linespace(1,10,5) --> devide 1 to 10 , 5 pices
-	      np.eye(3)  --> it wil give 3*3 array and same I and j will compel place is 1
+		  np.logspace(0, 2, 3) -->  
+​
+ .
+	      np.eye(3)  --> it wil give 3*3 array and same I and j will compain place is 1 others are 0
           np.random.rand(2) ---> random 2*2 array will give
 		  np.array([[1,2],[4,5]])
 		  np.vstack((arr1, arr2))
+		  np.numpy.diag([1,2,3])
+		  numpy.meshgrid()
+		  numpy.identity()
+		  numpy.fromiter()
+		  numpy.copy()
 		
 
 		  ------- Additional----------
@@ -123,6 +131,7 @@ Array Manipulation
 		np.split(arr, 3)
 		np.hstack((arr1, arr2))
 		np.vstack((arr1, arr2))
+		numpy.dsplit()
 
 		  ------- Additional----------
 		  np.ravel(): Flattens an array 
@@ -131,6 +140,14 @@ Array Manipulation
 		  np.repeat(): Repeats elements of an array
 		  np.swapaxes(): Swaps two axes of an array.
 		  np.roll(): Rolls array elements along a specified axis.
+		  numpy.reshape()
+		  numpy.transpose()
+		  numpy.append()
+		  numpy.insert()
+		  numpy.delete()
+		  numpy.repeat()
+		  numpy.flip()
+		  numpy.rot90()
 
 Mathematical Operations
 ------------------------
@@ -152,7 +169,24 @@ Mathematical Operations
 		np.exp()
 		np.log()
 		np.abs()
+		numpy.ceil()
 		np.floor() and np.ceil()
+		numpy.log10()
+		numpy.log2()
+		numpy.sin(), numpy.cos(), numpy.tan()
+		numpy.arcsin(), numpy.arccos(), numpy.arctan()
+		numpy.sinh(), numpy.cosh(), numpy.tanh()
+		numpy.absolute()
+		numpy.floor()
+		numpy.round()
+		numpy.sign()
+		numpy.mod()
+		numpy.dot()
+		numpy.inner()
+		numpy.outer()
+		numpy.cross()
+		numpy.trace()
+		numpy.det()
 
 
 Linear Algebra
@@ -160,6 +194,11 @@ Linear Algebra
 	  arr = np.array([[1, 2], [3, 4]])
 		np.linalg.inv(arr)              ------> inverse of a matrix.
 		np.linalg.det(mat)              ------> determinant of a matrix
+		numpy.linalg.inv()
+		numpy.linalg.eig()
+		numpy.linalg.svd()
+		numpy.linalg.norm()
+		numpy.linalg.solve()
 
 		eigenvalues, eigenvectors = np.linalg.eig(mat)
 	    x = np.linalg.solve(mat, [5, 11])             ---->  linear matrix equation.
